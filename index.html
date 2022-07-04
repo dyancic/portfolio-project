@@ -1,109 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/fb0a622a46.js" crossorigin="anonymous"></script>
-    <title>dyancic landing page</title>
-</head>
-<body>
-    <nav class="navbar">
-        <div class="navbar__logo"><i class="fa-solid fa-ship fa-xl"></i></div>
-        <ul class="navbar__list">
-            <li class="navbar__item">
-                <a class="navbar__link" href="/">Tech</a>
-            </li>
-            <li class="navbar__item">
-                <a class="navbar__link" href="/">Projects</a>
-            </li>
-            <li class="navbar__item">
-                <a class="navbar__link" href="/">About</a>
-            </li>
-            <li class="navbar__item">
-                <a class="navbar__link" href="/">Contact</a>
-            </li>
-        </ul>    
-    </nav>
-    <header class="section home">
-        <div class="home__container">
-            <h1 class="home__header">Hi,</h1>
-            <h1 class="home__header">I'm Daniel Yancic</h1>
-            <p class="home__para">Welcome to my portfolio</p>
-        </div>    
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://kit.fontawesome.com/fb0a622a46.js" crossorigin="anonymous"></script>
+        <title>dyancic landing page</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <a href="#homePage"><i class="fa-solid fa-ship fa-xl"></i></a>
+            </div>
+            <ul class="navbar__list">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#techStackPage">Tech</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#projectsPage">Projects</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#aboutMePage">About</a>
+                </li>
+                <!-- <li class="navbar__item">
+                    <a class="navbar__link" href="/">Contact</a>
+                </li> -->
+            </ul>
+        </nav>
 
-    <div class="spacer layer-one"></div>
+        <header class="section home" id="homePage">
+            <div class="home__container">
+                <h1 class="home__header">Hi,</h1>
+                <h1 class="home__header">I'm Daniel Yancic</h1>
+                <p class="home__para">Welcome to my portfolio</p>
+            </div>
+        </header>
 
-    <section class="section tech-stack">
-        <h2 class="tech-stack__header">Tech Stack</h2>
-        <div class="tech-stack__container">
-            <div class="tech-stack__card">
-                <i class="fa-brands fa-sass fa-2xl tech-stack__logo"></i>
-                <p class="tech-stack__name">SCSS</p>
-            </div>
-            <div class="tech-stack__card">
-                <i class="fa-brands fa-html5 fa-2xl tech-stack__logo"></i>
-                <p class="tech-stack__name">HTML</p>
-            </div>
-            <div class="tech-stack__card">
-                <i class="fa-brands fa-css3-alt fa-2xl tech-stack__logo"></i>
-                <p class="tech-stack__name">CSS</p>
-            </div>
-            <div class="tech-stack__card">
-                <i class="fa-brands fa-js fa-2xl tech-stack__logo"></i>
-                <p class="tech-stack__name">JS</p>
-            </div>
-            <div class="tech-stack__card">
-                <i class="fa-brands fa-git-alt fa-2xl tech-stack__logo"></i>
-                <p class="tech-stack__name">Git</p>
-            </div>
-        </div>
-    </section>
+        <div class="spacer layer-one"></div>
 
-    <div class="spacer layer-two"></div>
-
-    <section class="section projects">
-        <h2>What I've been working on...</h2>
-        <div class="projects__container">
-            <div class="projects__card">
-                <p class="projects_title">Lorem Ipsum</p>
-                <img src="https://www.placecage.com/g/250/250"/>
-                <p class="projects_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <section class="section tech-stack" id="techStackPage">
+            <h2 class="tech-stack__header">Tech Stack</h2>
+            <div class="tech-stack__container">
+                <div class="tech-stack__card">
+                    <i class="fa-brands fa-sass fa-2xl tech-stack__logo"></i>
+                    <p class="tech-stack__name">SCSS</p>
+                </div>
+                <div class="tech-stack__card">
+                    <i class="fa-brands fa-html5 fa-2xl tech-stack__logo"></i>
+                    <p class="tech-stack__name">HTML</p>
+                </div>
+                <div class="tech-stack__card">
+                    <i class="fa-brands fa-css3-alt fa-2xl tech-stack__logo"></i>
+                    <p class="tech-stack__name">CSS</p>
+                </div>
+                <div class="tech-stack__card">
+                    <i class="fa-brands fa-js fa-2xl tech-stack__logo"></i>
+                    <p class="tech-stack__name">JS</p>
+                </div>
+                <div class="tech-stack__card">
+                    <i class="fa-brands fa-git-alt fa-2xl tech-stack__logo"></i>
+                    <p class="tech-stack__name">Git</p>
+                </div>
             </div>
-            <div class="projects__card">
-                <p class="projects_title">Lorem Ipsum</p>
-                <img src="https://www.placecage.com/g/250/250"/>
-                <p class="projects_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </section>
+
+        <div class="spacer layer-two"></div>
+
+        <section class="section projects" id="projectsPage">
+            <h2>What I've been working on...</h2>
+            <div class="projects__container">
+                <div class="projects__card">
+                    <p class="projects_title">Lorem Ipsum</p>
+                    <img src="https://www.placecage.com/g/250/250" />
+                    <p class="projects_description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+                <div class="projects__card">
+                    <p class="projects_title">Lorem Ipsum</p>
+                    <img src="https://www.placecage.com/g/250/250" />
+                    <p class="projects_description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+                <div class="projects__card">
+                    <p class="projects_title">Lorem Ipsum</p>
+                    <img src="https://www.placecage.com/g/250/250" />
+                    <p class="projects_description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+                <div class="projects__card">
+                    <p class="projects_title">Lorem Ipsum</p>
+                    <img src="https://www.placecage.com/g/250/250" />
+                    <p class="projects_description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
             </div>
-            <div class="projects__card">
-                <p class="projects_title">Lorem Ipsum</p>
-                <img src="https://www.placecage.com/g/250/250"/>
-                <p class="projects_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </section>
+
+        <div class="spacer layer-three"></div>
+
+        <section class="section about-me" id="aboutMePage">
+            <h2>About me</h2>
+            <div class="about-me__container">
+                <img src="https://www.placecage.com/200/300" />
+                <p class="about-me__para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Deserunt natus nesciunt voluptatibus esse eaque, fuga
+                    perferendis facilis minima reiciendis atque cumque est
+                    ipsam, repellat quidem assumenda pariatur, incidunt quam
+                    quae.
+                </p>
             </div>
-            <div class="projects__card">
-                <p class="projects_title">Lorem Ipsum</p>
-                <img src="https://www.placecage.com/g/250/250"/>
-                <p class="projects_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-        </div>    
-    </section>
+        </section>
 
-    <div class="spacer"></div>
-    <section class="section about-me">
-        <h2>About me</h2>
-        <div class="about-me__container">
-            <img src="https://www.placecage.com/200/300" />
-            <p class="about-me__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt natus nesciunt voluptatibus esse eaque, fuga perferendis facilis minima reiciendis atque cumque est ipsam, repellat quidem assumenda pariatur, incidunt quam quae.</p>
-        </div>
-    </section>
+        <div class="spacer"></div>
 
-    <div class="spacer"></div>
-
-    <section class="section" id="contactMe"></section>  
-    <footer class="section">
-
-    </footer>
-</body>
+        <section class="section" id="contactMe"></section>
+        <footer class="section"></footer>
+    </body>
+    <script type="text/javascript" src="./script.js"></script>
 </html>

@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Faustina&family=IBM+Plex+Mono:wght@200;300&display=swap');
-$primary-color: #1A242C;
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Faustina&family=IBM+Plex+Mono:wght@200;300&display=swap");
+$primary-color: #1a242c;
 $secondary-color: #9e752a;
-$tech-background: #1A242C;
-
+$tech-background: #1a242c;
 
 * {
     font-family: Faustina, Helvetica, Arial, sans-serif;
@@ -17,7 +16,7 @@ body {
 }
 
 .navbar {
-    display: flex; 
+    display: flex;
     justify-content: space-between;
     align-items: center;
 
@@ -29,7 +28,7 @@ body {
     padding: 0 25px;
     top: 0;
     position: sticky;
-    z-index: 9999;
+    z-index: 2;
 
     &__list {
         display: flex;
@@ -41,17 +40,18 @@ body {
     }
 
     &__item {
-        height: 60;
+        height: 60px;
+        width: 100px;
+        text-align: center;
     }
 
     &__link {
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
         text-decoration: none;
         color: bisque;
-        padding: 1vw;
         height: 100%;
     }
 
@@ -82,7 +82,8 @@ h2 {
     display: flex;
     align-items: center;
     padding: 75px 10vw;
-    min-height: 65vh;
+    min-height: calc(100vh - 200px);
+    scroll-margin-top: 10vh;
 }
 
 .tech-stack {
@@ -96,7 +97,6 @@ h2 {
         text-align: center;
         flex-wrap: wrap;
         width: 90vw;
-        
     }
     &__card {
         justify-content: flex-end;
@@ -129,7 +129,6 @@ h2 {
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        
     }
 
     &__card {
@@ -142,39 +141,42 @@ h2 {
         border: 3px solid $secondary-color;
         border-radius: 3px;
         gap: 15px;
-        
+
         color: #1a242c;
     }
-
 }
 
 .about-me {
-        background-color: $primary-color;
+    background-color: $primary-color;
 
-        &__container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        &__para {
-            max-width: 600px;
-        }
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 
+    &__para {
+        max-width: 600px;
+    }
+}
+
 .spacer {
-    height: 20vw;
+    height: 200px;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    z-index: 99;
+    z-index: 1;
 }
 
 .layer-one {
-    background-image: url("./img/layer-one.svg");
+    background-image: url("./img/spacer-one.svg");
 }
 
 .layer-two {
-    background-image: url("./img/layer-two.svg");
+    background-image: url("./img/spacer-two.svg");
+}
+
+.layer-three {
+    background-image: url("./img/spacer-three.svg");
 }

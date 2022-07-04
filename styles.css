@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #1A242C;
+  background-color: #1a242c;
   color: bisque;
 }
 
@@ -23,7 +23,7 @@ body {
   padding: 0 25px;
   top: 0;
   position: sticky;
-  z-index: 9999;
+  z-index: 2;
 }
 .navbar__list {
   display: flex;
@@ -34,7 +34,9 @@ body {
   max-width: 600px;
 }
 .navbar__item {
-  height: 60;
+  height: 60px;
+  width: 100px;
+  text-align: center;
 }
 .navbar__link {
   display: flex;
@@ -42,14 +44,13 @@ body {
   justify-content: center;
   text-decoration: none;
   color: bisque;
-  padding: 1vw;
   height: 100%;
 }
 .navbar__logo {
   cursor: pointer;
 }
 .navbar .fa-ship {
-  color: #1A242C;
+  color: #1a242c;
 }
 
 h2 {
@@ -58,7 +59,7 @@ h2 {
 }
 
 .home {
-  background-color: #1A242C;
+  background-color: #1a242c;
 }
 .home__header {
   font-weight: 100;
@@ -69,7 +70,8 @@ h2 {
   display: flex;
   align-items: center;
   padding: 75px 10vw;
-  min-height: 65vh;
+  min-height: calc(100vh - 200px);
+  scroll-margin-top: 10vh;
 }
 
 .tech-stack {
@@ -129,7 +131,7 @@ h2 {
 }
 
 .about-me {
-  background-color: #1A242C;
+  background-color: #1a242c;
 }
 .about-me__container {
   display: flex;
@@ -141,18 +143,22 @@ h2 {
 }
 
 .spacer {
-  height: 20vw;
+  height: 200px;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  z-index: 99;
+  z-index: 1;
 }
 
 .layer-one {
-  background-image: url("./img/layer-one.svg");
+  background-image: url("./img/spacer-one.svg");
 }
 
 .layer-two {
-  background-image: url("./img/layer-two.svg");
+  background-image: url("./img/spacer-two.svg");
+}
+
+.layer-three {
+  background-image: url("./img/spacer-three.svg");
 }
